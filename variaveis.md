@@ -23,24 +23,54 @@ const ano = 2024 ;
 ```
 
 
-## Global
-`let`
+#
+# Escopo
+O escopo é responsável pela visibilidade e acessibilidade de variáveis, funções e objetos dentro de um programa. 
+Existem três principais tipos: escopo global, escopo local e escopo de bloco
 
-- agqfedd
-- ahsghdu
 
-- [ ] jjwdqj
-- [ ] swjdhf
+### Global
 
-Exemplo 
+As variáveis declaradas fora de qualquer função têm escopo global, o que significa que elas podem ser acessadas de qualquer lugar no código.
+
+Exemplo: 
 
 ```javascript
+var nome = 'fer'
+function exemploGlobal() {
+    console.log(nome); 
+}
 
-    if nome === 'oi'
+exemploGlobal(); 
 
 ```
 
 ### Bloco
 
-### Função
+Variáveis declaradas com let e const têm escopo de bloco, o que significa que elas só podem ser acessadas dentro do bloco em que foram declaradas.
+
+```Javascript
+function exemploBloco() {
+    if (true) {
+        let variavelBloco = 'Hello';
+        console.log(variavelBloco); 
+    }
+    console.log(variavelBloco);  //erro pq a variavel não esta acessivel aqui 
+
+exemploBloco();
+```
+
+### Local
+As variáveis declaradas dentro de uma função têm escopo local e só podem ser acessadas dentro dessa função.
+
+```Javascript
+function exemploLocal() {
+    var variavelLocal = 20;
+    console.log(variavelLocal); // Acesso à variável local
+}
+
+exemploLocal(); // Saída: 20
+console.log(variavelLocal); // erro, variavel não está acessível aqui.
+
+```
 
