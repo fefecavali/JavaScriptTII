@@ -21,7 +21,37 @@ const ano = 2024 ;
 
 
 ```
+#
+# Tipos primitivos
+Em Javascript os tipos primitivos são imutáveis.Existem 6 tipos primitivos em JavaScript, eles são: 
 
+- **Number**: Representa valores numéricos, sejam inteiros ou de ponto flutuante. 
+
+- **String**: Representa uma sequência de caracteres.
+
+- **Booleano (Boolean)**: Representa um valor lógico true ou false ;
+
+- **Undefined**: Representa uma variável que foi declarada, mas não atribuída com um valor;
+
+- **Null**: Representa um valor vazio ou nulo;
+
+- **Symbol**: Representa um tipo de dado único e imutável, muitas vezes usado como identificadores únicos de propriedades de objetos.
+
+### Exemplos: 
+```javascript
+
+let pi = 3.14 //ex number
+
+let message = ' Hello World!'  //ex string
+
+let booleano = true; 
+let a = undefined; //ex tipo indefinido
+
+let nulo = null ;
+let simbolo = Symbol('descricao');
+
+
+```
 
 #
 # Escopo
@@ -74,3 +104,76 @@ console.log(variavelLocal); // erro, variavel não está acessível aqui.
 
 ```
 
+#
+# Exercícios Variáveis  e tipos primitivos em JavaScript
+
+```javaScript
+// Declare duas variáveis as quais serão do tipo String e junte-as 
+
+//exemplo de solução -->
+
+let nome1 = 'Fernanda'
+let sobrenome = 'Cavali'
+
+let nomeCompleto = nome1+ " " + sobrenome;
+
+console.log("Nome completo:", nomeCompleto);
+```
+
+```javaScript
+
+// Declare duas variáveis do tipo number e calcule o resultado da sua solução. 
+
+//exemplo de solução -->
+
+let num1 = 15 ;
+let num2 = 3.15 ;
+
+let resultado = num1/num2 ;
+
+
+console.log("Divisão:", resultado);
+
+```
+```javaScript
+// Declare uma variável indefinida e outra nula
+
+//solução -->
+
+let variavelIndef = undefined
+let variavelNula = null
+
+```
+```javascript
+// Crie um símbolo com uma descrição personalizada. Em seguida, declare um objeto com uma propriedade cuja chave seja o símbolo criado e imprima o objeto no console.
+
+//solução -->
+
+let descricaoSimbolo = "descricao_personalizada";
+let meuSimbolo = Symbol(descricaoSimbolo);
+let objeto = {};
+
+objeto[meuSimbolo] = "Valor do símbolo";
+
+console.log(objeto);
+```
+
+```javascript
+// Declare uma variável e atribua a ela um valor numérico. Em seguida, declare uma variável temperatura e atribua a ela o valor true se a temperatura for menor que 15 graus, e false caso contrário. 
+
+//solução -->
+
+let valor = 10;
+let temperatura = valor < 15;
+
+console.log("Frio:", temperatura);
+
+
+```
+
+
+
+
+
+
+## by Fernanda Moreira Cavali
